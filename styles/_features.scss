@@ -1,0 +1,52 @@
+.features-container {
+  background: #323232;
+
+}
+.features{
+  min-height: 60vh;
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  h2{
+    padding: 24px;
+    font-weight: 500;
+    font-family: sans-serif;
+    color: darkorange;
+  }
+
+  .cards{
+    display: flex;
+    justify-content:  space-between;
+    color: black;
+    height: auto;
+    width: auto;
+
+    .card{
+      background: initial;
+      margin: 0rem 2rem;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      border-radius: 2rem;
+      overflow: hidden;
+      all: initial;
+
+      h4{
+        align-self: flex-end;
+      }
+      p {
+        padding: 2rem;
+        color: aliceblue;
+        font-family: "Sirin stencil", cursive;
+        font-size: 2.5rem;
+      }
+      img {
+        object-fit:scale-down;
+      
+      }
+    }
+  }
+
+}

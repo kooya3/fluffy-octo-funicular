@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Sirin+Stencil&display=swap');
+:root{
+  --primary-color: white;
+  --secondary-color: black;
+  --tertiary-color: #FA5F1A;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+  background-image: url(/images/background.svg);
+  background-repeat: no-repeat;  
+}
+body{
+  font-family: "Sirin stencil", cursive;
+
+}
+.coming-soon, div h2{
+  font-size: 5rem;
+  font-weight: bold;
+  padding: 3rem;
+  color: white;
+}
+.coming-soon {
+  min-height: 90vh;  
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+.countdown {
+  display: flex;
+  justify-content: space-around;  
+  text-align: center; 
+  color: #FA5F1A; 
+  font-size: 3rem;
+  font-weight: 200
+}
+.day,.hour,.minute,.second{
+  font-size: 3rem;  
+  color: black;
+  font-weight: 300;
+}
+
+.people{
+  height: 80vh;
+  width: 80vw;
+  align-self: center;
+  display: grid;
+}
+.container-details{
+  position: sticky;
+  right: 10%;
+  flex-wrap: wrap;
+  float: inline-end;
+  align-self: flex-end;
+  height: 20vh;
+  width: auto;
+  overflow-wrap: break-word;
+  justify-content: right;
+}
+.details, h2{
+  color: gray;
+  font-size: 30px;
+  justify-content: space-around;
+  word-wrap: normal;
+}
+.details, h2 i{
+  color: var(--tertiary-color);
+  font-size: 62px;
+}
+.details, h2 em {
+  color: #fff;
+  font-size: 33px;
+}
+
+#person-1{
+animation: people 1s ease infinite;
+transform-origin: center;
+transform-box: fill-box;
+}
+@keyframes people{
+  from{
+    opacity: 0;
+    transform: rotateX(0deg);
+  }
+  to{
+    opacity: 1;
+    transform:rotateX(360deg)
+  }
+}
