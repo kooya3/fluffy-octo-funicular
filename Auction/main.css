@@ -17,6 +17,20 @@ body{
   justify-content: center;
   color:hsl(0deg 77% 52%);
 }
+.coming-soon, div h5{
+  font-size: 3.5rem;
+  font-weight: bold;
+  padding: 3rem;
+  justify-content: center;
+  color:rgb(204, 27, 27);
+}
+.coming-soon, div h6{
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding: 4rem;
+  justify-content: space-between;
+  color:rgb(8, 1, 1);
+}
 .coming-soon {
   min-height: 90vh;  
   display: flex;
@@ -85,4 +99,19 @@ transform-box: fill-box;
     opacity: 1;
     transform:rotateX(360deg)
   }
+}
+button{
+    color: aliceblue;
+    background-color: blue;
+    overscroll-behavior-inline: var(--tertiary-color);
+    float: calc(+23px);
+    border-radius: 10%;
+    flex-grow: 2;
+    flex-wrap: wrap;
+    margin: 2px;
+}
+button[onclick]{
+    background-color: #FA5F1A;
+    zoom: 2;
+    align-self: start;
 }
